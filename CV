@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title style="font-size:20px;">>Curriculum Vitae</title>
+    </head>
+
+    <body>
+        <h1 style="font-size:30px;">>Eva Vaculíková</h1>
+            <p>
+                <ul>
+                    <li>tel: 775 61 53 54, email: vaculikova.eva@yahoo.com</li>
+                    <li>Trvalý pobyt: Haánova 14, 851 04 Bratislava, Slovenská republika</li>
+                    <li>Prechodný pobyt: Šantrochova 14, 162 00 Praha 6, Česká republika</li>
+                </ul>
+            </p>
+
+        <h2>Osobné údaje:</h2>
+            <p>
+                <ul>
+                    <li>Rodinný stav: slobodná</li>
+                    <li>Národnosť: Slovenská Republika</li>
+                </ul>
+            </p>
+
+        <h2>Vzdelanie:</h2>
+            <p>
+                <ul>
+                    <li>2012  2016	Univerzita Karlova, Fakulta socilnch v?d  Medzinrodn vztahy, Smetanovo nb?e 6, Praha</li>
+                        <ul><li>Mgr.</li></ul>
+                    <li>2009  2012 	VE, Fakulta mezinrodnch vztah?  diplomacie, Nm. W.Churchilla, Praha</li>
+                        <ul><li>Bc.</li></ul>
+                    <li>2008  2009	Matematicko-fyzikln fakulta UK - informatika, Praha</li>
+                    <li>2006  2008 	IBD  Baccalaureate Diploma Program, Gymnzium Jura Hronca, Koick Bratislava</li>
+                        <ul><li>Vyu?ovac jazyk: angli?tina</li></ul>
+                </ul>
+            </p>
+
+        <h2>Pracovné skúsenosti:</h2>
+            <p>
+                <ul>
+                    <li>5/2019  doteraz  Nrodn knihovna ?esk republiky.</li>
+                        <ul>
+                            <li>Sprvca aplikcie Workflow</li>
+                            <li>oprava chb v programe Workflow pre digitalizciu knh v ?R, sprva aplikcie, administratva.</li>
+                        </ul>
+                    <li>12/2018  3/2018  Webhelp Enterprise Sales Solutions s.r.o.</li>
+                        <ul>
+                            <li>HR pecialista nborov</li>
+                            <li>vyh?advanie vhodnch kandidtov na intern pozcie prostrednctvom internch doporu?en, manulnym h?adanm cez databzu <br>životopisov Teamio (jobs.cz), LinkedIn, Facebooku, inzercie</li>
+                        </ul>
+                    <li>4/2017  9/2017  rodina Hassenpflug, Hamburg, Nemecko</li>
+                        <ul>
+                            <li>au  pair</li>
+                            <li>starostlivos? o deti, domcnos?, zlepovanie jazykovch znalost</li>
+                        </ul>
+                    <li>10/2016  12/2016  Bonami</li>
+                        <ul>
+                            <li>opertorka zkaznickho centra</li>
+                            <li>telefonick komunikcia a rieenie nespokojnosti zkaznkov naprie oddeleniami</li>
+                        </ul>
+                    <li>1/2015  2/2016 - Allianz Assisstance</li>
+                        <ul>
+                            <li>opertor oddelenia ochrany majetku</li>
+                            <li>spis poistnch udalost, administratva, telefonick komunikcia so zkaznkmi, zabezpe?ovnie sluieb zkaznkom, <br>komunikcia s dodvate?mi, prca v programe Unity</li>
+                        </ul>
+                    <li>8/2014  9/2014  Hays Czech Republic</li>
+                        <ul>
+                            <li>consultant associate</li>
+                            <li>vyh?advanie vhodnch kandidtov pre klientov</li>
+                        </ul>
+                    <li>6/2014  12/2014  Allianz Assisstance</li>
+                        <ul><li>telefnny opertor, spis poistnch udalost</li></ul>
+                    <li>9/2013  12/2016  ob?asn skromn dou?ovanie anglickho jazyka</li>
+                    <li>8/2010  7/2011  English School</li>
+                        <ul><li>vyu?ovanie angli?tiny Callanovou metdou</li></ul>
+                    <li> 7-8/2008  predava?ka Costcutter, Birmingham, Ve?k Britnia</li>
+                    <li>10/2007 - 12/2007  Royal School</li>
+                        <ul><li>vyu?ovanie angli?tiny Callanovou metdou</li></ul>
+                </ul>
+            </p>
+
+        <h2>Dobrovoľná činnosť:</h2>
+            <p> 
+                <ul>
+                    <li>2010/2011  spoluprca s PSS na projekte Model E</li>
+                    <li>2007  spoluprca pri organizcii medzinrodnho tudentskho podujatia BratMUN 2007 (Model United Nations)</li> 
+                        <ul><li>predsedajca komisie WHO natmu Zastavenie renia HIV asocilna pomoc jej obetiam (pracovn jazyk anglick)</li></ul>
+                    <li>7-8/2007 - asistencia pri zakladan miestnej pobo?ky spolo?nosti Nivo v Bratislave</li> 
+                        <ul><li>preklady, simultnny preklad apomocn prace</li></ul> 
+                    <li>2007 - Slovenska debatn asocicia</li>
+                        <ul>
+                            <li>(sept  dec) koordincia debatnho klubu</li>
+                            <li>Skupina SOT - administratvna prca, registrcia debatrov</li>
+                        </ul>
+                    <li>2003  2008  dobrovo?n prca pre ?erven kr</li>
+                        <ul>
+                            <li>prezentcia 1. pomoci verejnosti</li> 
+                            <li>koordincia skupiny pre ncvik 1.pomoci a jej prezentcia v materskch kolch</li>
+                            <li>administratva</li>
+                        </ul>
+                </ul>
+            </p>
+
+        <h2>Schopnosti:</h2>
+            <p>
+                <ul>
+                    <li>MS Office</li>
+                    <li>anglick jazyk slovom a psmom  C1</li>
+                    <li>nemeck jazyk slovom apsmom  B2 - C1</li>
+                    <li>rusk jazyk  B2</li>
+                    <li>franczsky jazyk B1</li>
+                    <li>certifikt v pois?ovnctve</li>
+                    <li>certifikt absolvovania kurzu MS Excel a MS Word</li>
+                </ul>
+            </p>
+
+        <h2>Záujmy:</h2>
+            <p>
+                <ul>
+                    <li>sledovanie filmov  umeleckch, dokumentov, politicky zameranch</li> 
+                    <li>cestovanie</li>
+                    <li>port  beh, turistika, Krav Maga</li>
+                </ul>    
+            </p>
+    
+</body>
+</html>
