@@ -1,15 +1,25 @@
 body {
   background-color: lightblue;
-  color: rgb(8, 8, 8);
+  color: black;
   font-family: Times New Roman;
   font-size: 15px;
 }
-  
+
+
+div {
+  height: 500 px;
+  width: 50 px;
+  background-color: rgb(4, 218, 247);
+  margin-right: 600 px;
+  padding-left: 10 px;
+}
+
 h1 {
   color: navy;
   margin-left: 20px;
 }
-h2 {
 
+h2 {
+  padding-left: inherit;
 }
 
