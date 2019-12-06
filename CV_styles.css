@@ -4,35 +4,40 @@ body {
   font-family: Times New Roman;
   font-size: 15px;
 }
-
+#wrapper {
+  border: 1px solid black;
+}
 
 div {
   height: 500 px;
   width: 50 px;
   background-color: rgb(4, 218, 247);
-  margin-right: 600 px;
-  padding-left: 10 px;
+  padding-left: 10px;
 }
 
 #para1 {
   text-align: left;
   background-color: violet;
-  margin-right: 900 px;
+  margin-right: 900px;
+  float: left;
 }
 
 #para2 {
   text-align: left;
   background-color: tomato;
+  margin-left: 250px;
 }
 
 #para3 {
   text-align: left;
   background-color: salmon;
+  margin-left: 250px;
 }
 
 h1 {
   color: black;
-  margin-left: 20px;
+  margin-left:20px;
+  text-align: center;
 }
 
 h2 {
