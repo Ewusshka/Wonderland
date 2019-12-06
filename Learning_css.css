@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+body {
+  color: green;
+  text-align: center;
+  background-color: lightblue;
+  /* This is
+a multi-line
+comment */
+} 
+
+p {
+  font-family: script;
+  font-size: 20px;
+
+  color: red;
+  text-align: center;
+} 
+
+.abc {
+color: orange;
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+}
+
+<h1 style="color:blue;text-align:center;">Heading</h1>
+
+</style>
+</head>
+<body>
+
+<p class="abc">Hello World!</p>
+<p >These paragraphs are styled with CSS.</p>
+
+</body>
+</html>
