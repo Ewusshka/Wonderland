@@ -14,8 +14,24 @@ div {
   padding-left: 10 px;
 }
 
+#para1 {
+  text-align: left;
+  background-color: violet;
+  margin-right: 900 px;
+}
+
+#para2 {
+  text-align: left;
+  background-color: tomato;
+}
+
+#para3 {
+  text-align: left;
+  background-color: salmon;
+}
+
 h1 {
-  color: navy;
+  color: black;
   margin-left: 20px;
 }
 
