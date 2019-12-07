@@ -18,7 +18,7 @@ div {
 #para1 {
   text-align: left;
   background-color: violet;
-  margin-right: 900px;
+  margin-right: 950px;
   float: left;
 }
 
@@ -26,6 +26,7 @@ div {
   text-align: left;
   background-color: tomato;
   margin-left: 250px;
+  display: inline-flex;
 }
 
 #para3 {
