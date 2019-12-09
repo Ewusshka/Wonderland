@@ -6,6 +6,7 @@ body {
 }
 #wrapper {
   border: 1px solid black;
+  overflow: hidden;
 }
 
 div {
@@ -18,18 +19,20 @@ div {
 #para1 {
   text-align: left;
   background-color: violet;
+  width: 230px;
+  margin-top: 10px;
   margin-right: 950px;
-  float: left;
 }
 
 #para2 {
+  display: flex;
   text-align: left;
   background-color: tomato;
   margin-left: 250px;
-  display: inline-flex;
 }
 
 #para3 {
+  display: flex;
   text-align: left;
   background-color: salmon;
   margin-left: 250px;
