@@ -3,16 +3,22 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+
 }
 #wrapper {
   border: 1px solid black;
-  width: 1100px;
-  height: 1070px;
+  width: 1120px;
+  height: 1090px;          
 }
 
 div {
-  padding-left: 5px;
-  padding-top: 5px;
+  padding: 5px;
+}
+
+#heading {
+  text-align: center;
+  width: 1120px;
+  /*Snazim sa vycentrovat nadpis, aby sa nehybal pri maximalizacii okna prehliadaca.*/
 }
 
 #para1 {
