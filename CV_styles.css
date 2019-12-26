@@ -7,7 +7,7 @@ body {
 }
 #wrapper {
   border: 1px solid black;
-  width: 1120px;
+  width: 98%;
   height: 1090px;          
 }
 
@@ -24,9 +24,9 @@ div {
 #para1 {
   display: inline-block; 
   background-color: rgb(104, 103, 185);
-  width: 240px;
+  width: 28%;
   height: 1050px;
-  margin: 10px 10px;
+  margin: 1%;
   padding-top: 5px
 }
 
@@ -34,10 +34,10 @@ div {
   display: inline-block;
   /*text-align: left;*/
   background-color: rgb(104, 103, 185);
-  width: 800px;
+  width: 64%;
   height: 1050px;
   vertical-align:top;
-  margin: 10px 10px;
+  margin: 1%;
 }
 
 h1 {
