@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
-<body>
+google.load("language", "1");
 
-<h2>My First JavaScript</h2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
-
-</body>
-</html> 
+function initialize() {
+    var content = document.getElementById('content');
+    content.innerHTML = '<div id="text">Hola, me alegro mucho de verte.<\/div><div id="translation"/>';
+    var text = document.getElementById("text").innerHTML;
+    google.language.translate(text, 'sk', 'cz', function(result) {
+        var translated = document.getElementById("translation");
+        if (result.translation) {
+            translated.innerHTML = result.translation;
+        }
+    });
+}
+google.setOnLoadCallback(initialize);
