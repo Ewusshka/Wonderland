@@ -1,6 +1,5 @@
 function myFunction2() {
-    document.getElementById("para1").innerHTML = 
-        "775 61 53 54<br>
+  document.getElementById("para1").innerHTML = `775 61 53 54<br>
         <a href="mailto:vaculikova.eva@yahoo.com">vaculikova.eva@yahoo.com</a><br>
         Šantrochova 14, 162 00 Praha<br>
         <h2 class="heading">Jazyky:</h2>
@@ -23,5 +22,5 @@ function myFunction2() {
             <li>divadlo</li>
             <li>cestovanie</li>
             <li>beh, Krav Maga, yoga</li>
-        </ul>";
+        </ul>";`;
 }
