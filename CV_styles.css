@@ -3,12 +3,12 @@ body {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-
 }
 #wrapper {
   border: 1px solid black;
   width: 98%;
-  height: 1300px;          
+  height: 1300px;
+  margin: 0 auto;
 }
 
 div {
@@ -21,12 +21,12 @@ div {
 }
 
 #para1 {
-  display: inline-block; 
+  display: inline-block;
   background-color: rgb(104, 103, 185);
   width: 28%;
   height: 96%;
   margin: 1%;
-  padding-top: 5px
+  padding-top: 5px;
 }
 
 #para2 {
@@ -35,18 +35,18 @@ div {
   background-color: rgb(104, 103, 185);
   width: 64%;
   height: 96%;
-  vertical-align:top;
+  vertical-align: top;
   margin: 1%;
 }
 
 .heading {
-  font-family: Cambria, serif ;
+  font-family: Cambria, serif;
   font-size: 1.8em;
 }
 
 h1 {
   color: black;
-  margin-left:20px;
+  margin-left: 20px;
   text-align: center;
   font-size: 3em;
   /*Preco nadpis Eva V... nezdedil 3em, ale zdedil 1.8em. Info o 3em je neskor, tak by mala mat prednost.*/
@@ -56,4 +56,3 @@ h2 {
   padding-left: inherit;
   font-size: 1.5em;
 }
-
