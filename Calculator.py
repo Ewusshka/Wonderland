@@ -1,6 +1,6 @@
 import sys
 
-print("Vítam Vás v programe kalkulačka! \n Budeme spolu sčítavať, odčítať, násobiť a deliť celé a desatinné čísla.")
+print("Vítam Vás v programe kalkulačka! Budeme spolu sčítavať, odčítať, násobiť a deliť celé a desatinné čísla.")
 
 GoOn = input(("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ") 
 if GoOn is 'n':
