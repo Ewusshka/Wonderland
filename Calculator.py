@@ -1,17 +1,51 @@
 import sys
-from methods import add
-# , sub, mul, div
+from methods import add, sub, mul, div
 
-# not necessary in our case but why is good to use the following you may check here: https://stackoverflow.com/a/419189/7374363
 if __name__ == "__main__":
-    print(__name__)
+    # print(__name__)
     print("Vítam Vás v programe kalkulačka! Budeme spolu sčítavať, odčítať, násobiť a deliť celé a desatinné čísla.")
-    add(1, 2)
-# while podminka: loop musi byt tady
-# GoOn = input("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ")
-# if GoOn == 'n':
-# 	print("Prajem krásny deň! Zas niekedy nabudúce spočítam, čo sa Vám bude páčiť. :")
-# 	exit(0)
+    GoOn = input("Pre počítanie napíšte 'a', pre ukončenie programu, napíšte 'n': ")
+    while GoOn == 'a':
+        # print("Super") # Pomocka. Vymazem.
+        a = input("Zadajte 1. celé alebo desatinné číslo: ")
+        a = float(a)
+        act = input("Prosím, vyberte si funkciu. Pre sčítanie '+', pre odčítanie '-', pre násobenie '*' a pre delenie '/': ")
+        b = input("Zadajte 2. celé alebo desatinné číslo: ")
+        b = float(b)
+        if act is '+':
+            # print("+") # Pomocka. Vymazem.
+            add(a, b)
+            GoOn = input("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ")
+            continue
+        elif act is '-':
+            # print("-") # Pomocka. Vymazem.
+            sub(a, b)
+            GoOn = input("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ")
+            continue
+        elif act is '*':
+            # print("*") # Pomocka. Vymazem.
+            mul(a, b) # Preco to, plz, musi byt string pri zobrazeni vysledku? Dik. :)
+            GoOn = input("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ")
+            continue
+        elif act is '/':
+            # print("/") # Pomocka. Vymazem.
+            div(a, b)
+            GoOn = input("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ")
+            continue
+        else:
+            act = input("Zadali ste nesprávnu hodnotu. Zadajte, prosím '+', '-', '*' alebo '/': ")
+            continue
+    if GoOn != ('a' and 'n'):
+        GoOn = input("Zadali ste zlú hodnotu. Prosím, zadajte 'a' alebo 'n': ")
+        # print(GoOn)
+        sys.exit() # continue nefunguje. Co tam, plz, dat, aby to slo na zaciatok if-loopu? Dala som tam exit radsej. Dik. :)
+    else: # lebo zadal 'n'
+        print("Prajem krásny deň!")
+        sys.exit()
+else: # lebo to nie je funkcia main
+    print("Prajem krásny deň!")
+    sys.exit()
+
 # elif GoOn is 'a':
 # 	a,b = (float(x) for i in input("Prosím zadajte 2 čísla, s ktorými chcete počítať a oddeľte ich " " (medzerou).").split())
 # 	act = ("Prosím, vyberte si funkciu. Pre sčítanie napíšte '+', pre odčítanie napíšte '-', pre násobenie vypíšte '*' a pre delenie vypíšte '/'.")
@@ -33,4 +67,4 @@ if __name__ == "__main__":
 # else:
 # 	print("Zadali ste nesprávnu hodnotu. Prosím, zadajte 'a' alebo 'n'. ")
 # 	continue
-# 	#pokracuje v loope
+# 	pokracuje v loope

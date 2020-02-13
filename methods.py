@@ -6,19 +6,19 @@ def add(a, b):
 
 def sub(a, b):
     c = a - b
-    print("Výsledok je: " + c)
+    print("Výsledok je: " + str(c))
     return c
 
 
 def mul(a, b):
     c = a * b
-    print("Výsledok je: " + c)
+    print("Výsledok je: " + str(c))
     return c
 
 
 def div(a, b):
     c = a / b
-    print("Výsledok je: " + c)
+    print("Výsledok je: " + str(c))
     return c
 
 # def add_eva(a, b):
