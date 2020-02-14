@@ -25,13 +25,14 @@ if __name__ == "__main__":
             print("Number " + str(a) + " is even.")
             pass
         GoOn = input("Do you want to continue? y/n: ")
+        if GoOn == 'n':
+            break;
         a = int(input("Write an integer, please: "))
         # Pyta sa na integer, ak ked nechcem pocitat.
         b = a % 2
         b = int(b)
         continue
-    else:
-        print("Cya!")
+    print("Cya!")
 else:
     print("This is not __main__. It will not work.")
     sys.exit()
