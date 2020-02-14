@@ -3,19 +3,20 @@ import sys
 if __name__ == "__main__":
     print("Hi!")
     GoOn = input("Do you want to find out, if your number is even or odd? y/n: ")
+    if GoOn == 'n':
+        print("Cya!")
+        sys.exit()
     a = int(input("Write an integer, please: "))
-    # Pyta sa na integer, ak ked nechcem pocitat.
     b = a % 2
     b = int(b)
     while (GoOn != "y") and (GoOn != "n"):
         GoOn = input("You have written a wrong letter. Please write: 'y' or 'n': ")
-        # Napise mi: You have written a wrong letter..., ked zadam n
         continue
     else:
         pass
     while GoOn == "y":
-        print("I work.")
-        if a == 0 :
+        # print("I work.")
+        if a == 0:
             print("Number " + str(a) + " is zero.")
             pass
         elif b == (1 or -1):
@@ -26,9 +27,9 @@ if __name__ == "__main__":
             pass
         GoOn = input("Do you want to continue? y/n: ")
         if GoOn == 'n':
-            break;
+            break
         a = int(input("Write an integer, please: "))
-        # Pyta sa na integer, ak ked nechcem pocitat.
+        # Pyta sa na integer, aj ked nechcem pocitat.
         b = a % 2
         b = int(b)
         continue

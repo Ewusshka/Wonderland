@@ -3,7 +3,6 @@ def add(a, b):
     print("Výsledok je: " + str(c))
     return c
 
-
 def sub(a, b):
     c = a - b
     print("Výsledok je: " + str(c))
@@ -20,6 +19,7 @@ def div(a, b):
     c = a / b
     print("Výsledok je: " + str(c))
     return c
+
 
 # def add_eva(a, b):
 #   if (a > 0 and b > 0):

@@ -2,67 +2,62 @@ import sys
 from methods import add, sub, mul, div
 
 if __name__ == "__main__":
-    # print(__name__)
     print("Vítam Vás v programe kalkulačka! Budeme spolu sčítavať, odčítať, násobiť a deliť celé a desatinné čísla.")
-    GoOn = input("Pre počítanie napíšte 'a', pre ukončenie programu, napíšte 'n': ") # pokud zadam cokoliv jineho nez 'a' tak program skonci, co se ma tedy stat pokud zadam 'n'?
+    GoOn = input("Pre počítanie napíšte 'a', pre ukončenie programu, napíšte 'n': ")
+    # pokud zadam cokoliv jineho nez 'a' tak program skonci, co se ma tedy stat pokud zadam 'n'?
+    # EV: Ja som 'n' bolo opatrene mala, si mi to vymazal. :) Bola som v tom, ze to bolo dokonca funkcne,
+    # EV: ale mozno som to dostatocne netestovala. Myslienka bola, ze pokial je
+    # EV: 1. "while GoON = a", tak pocita,
+    # EV: 2. ak nie je (if) ani 'a' ani 'n', tak vypise, ze to je zle, zobere si nove GoOn a hodi na zaciatok
+    # EV: 3. a ak nie je ani 'a', ani nie je ani 'a' ani 'n', tak (else: ), cize ostava len to, ze je 'n', povie "Cya" a program ukonci.
+    # EV: Menim to teda nasledovne. line 14-20.
+    if GoOn not in ['a', 'n']:
+        GoOn = input("Zadali ste zlú hodnotu. Prosím, zadajte 'a' alebo 'n': ")
+        pass
+        # EV: Ako to, prosim, mozem vratit spat na zaciatok podmienky? Ci to nejde, plz? "continue" mi nedovoli napisat a asi vie preco. :D
+    if GoOn == 'n':
+        print("Prajem krásny deň!")
+        sys.exit()
     while GoOn == 'a':
-        # print("Super") # Pomocka. Vymazem.
-        a = input("Zadajte 1. celé alebo desatinné číslo: ")
-        a = float(a)
+        a = float(input("Zadajte 1. celé alebo desatinné číslo: "))
         act = input("Prosím, vyberte si funkciu. Pre sčítanie '+', pre odčítanie '-', pre násobenie '*' a pre delenie '/': ")
         if act not in ['+','-','*','/']:
             print('Neznámá operace')
+            act = input("Prosím, vyberte si funkciu. Pre sčítanie '+', pre odčítanie '-', pre násobenie '*' a pre delenie '/': ")
             continue
         b = input("Zadajte 2. celé alebo desatinné číslo: ")
         b = float(b)
+        # c = None
         if act is '+':
-            # print("+") # Pomocka. Vymazem.
             add(a, b)
+            # print("Výsledok je: " + str(c))
         elif act is '-':
-            # print("-") # Pomocka. Vymazem.
             sub(a, b)
         elif act is '*':
-            # print("*") # Pomocka. Vymazem.
-            mul(a, b) # Preco to, plz, musi byt string pri zobrazeni vysledku? Dik. :) 
-                      # - na radku 15 v methods.py provadis slouceni pres operator + ktery ocekava dva operandy typu string :) Mimochodem pro prehlednost by vypisovani vysledku melo byt zde nikoli v methods.py. Metody by mely vracet pouze vysledek, nic vic
+            mul(a, b)
+            # -  Mimochodem pro prehlednost by vypisovani vysledku melo byt zde nikoli v methods.py. Metody by mely vracet pouze vysledek, nic vic
+            # EV: Ked to zmazala z methods.py 'print...' a dala do riadku 46 sem, identation 2, premennu c to nepoznalo.
+            # EV: Ked som zadala do 30. riadku 'c = None', tak vypisalo po vypocte None.
+            # EV: Ked som zadala hned za funkcie v 'if'cykle print, l. 33, indentation 3, tiez to nespoznalo 'c'.
+            # EV: PROGRAM NEPREBERIE PREMENNU "c" Z INEHO skriptu? Na to je PRIKAZ?
+            # EV: Ja teda radsej vraciam print spat do methods.py. Ako sa to da spravit, aby sa dal vypisat vysledok 'print c' tu, plz?
         elif act is '/':
-            # print("/") # Pomocka. Vymazem.
             div(a, b)
+        # print("Výsledok je: " + str(c))
         GoOn = None
-        while not (GoOn):
-            GoOn = input("Ak si prajete niečo spočítať, napíšte 'a', ak si prajete ukončiť program, napíšte 'n' a stlačte Enter. ")
+        # EV: Aky zmysel ma plz 'GoOn = None'? GoOn treba premazat alebo to robis ako strategiu, ako spustit dalsi while cyklus?
+        while not GoOn:
+            GoOn = input("Pre počítanie napíšte 'a', pre ukončenie napíšte 'n': ")
             if GoOn not in ['a', 'n']:
-                print("Zadali ste zlú hodnotu. Prosím, zadajte 'a' alebo 'n': ")
+                print("Zadali ste zlú hodnotu.")
                 GoOn = None
                 continue
             elif GoOn == 'a':
                 break
+                # EV: Co robi, prosim, toto break? Preskakuje na riadok 21? Dik. :)
             else: # lebo zadal 'n'
                 print("Prajem krásny deň!")
                 sys.exit()
 else: # lebo to nie je funkcia main
     print("Prajem krásny deň!")
     sys.exit()
-
-# elif GoOn is 'a':
-# 	a,b = (float(x) for i in input("Prosím zadajte 2 čísla, s ktorými chcete počítať a oddeľte ich " " (medzerou).").split())
-# 	act = ("Prosím, vyberte si funkciu. Pre sčítanie napíšte '+', pre odčítanie napíšte '-', pre násobenie vypíšte '*' a pre delenie vypíšte '/'.")
-# 	if act is '+':
-# 		add(a, b)
-# 		continue
-# 	elif act is '-':
-# 		sub(a,b)
-# 		continue
-# 	elif act is '*':
-# 		mul(a,b)
-# 		continue
-# 	elif act is '/':
-# 		div(a,b)
-# 		continue
-# 	else:
-# 		print("Zadali ste nesprávnu hodnotu.")
-# 		continue #Prepodkladam, ze vrati na zaciatok medzi-loopu"
-# else:
-# 	print("Zadali ste nesprávnu hodnotu. Prosím, zadajte 'a' alebo 'n'. ")
-# 	continue
-# 	pokracuje v loope
