@@ -1,7 +1,6 @@
 import sys
 
 a = [int(x) for x in input("Write numbers (divided by space): ").split()]
-print(a)
 length = len(a)
 i = int(0)
 for i in range(length - 1):         # for loop continues (length - 1) number of times
