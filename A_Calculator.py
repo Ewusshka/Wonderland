@@ -2,8 +2,8 @@ import sys
 from methods import add, sub, mul, div
 
 if __name__ == "__main__":
-    print("Vítam Vás v programe kalkulačka! Budeme spolu sčítavať, odčítať, násobiť a deliť celé a desatinné čísla.")
-    GoOn = input("Pre počítanie napíšte 'a', pre ukončenie programu, napíšte 'n': ")
+    print("Vítam Vás v kalkulačke!")
+    GoOn = input("Chcete pokračovať? a/n : ")
     # pokud zadam cokoliv jineho nez 'a' tak program skonci, co se ma tedy stat pokud zadam 'n'?
     # EV: Ja som 'n' bolo opatrene mala, si mi to vymazal. :) Bola som v tom, ze to bolo dokonca funkcne,
     # EV: ale mozno som to dostatocne netestovala. Myslienka bola, ze pokial je
@@ -20,12 +20,12 @@ if __name__ == "__main__":
         sys.exit()
     while GoOn == 'a':
         a = float(input("Zadajte 1. celé alebo desatinné číslo: "))
-        act = input("Prosím, vyberte si funkciu. Pre sčítanie '+', pre odčítanie '-', pre násobenie '*' a pre delenie '/': ")
+        act = input("Vyberte si funkciu. '+', '-', '*', '/': ")
         if act not in ['+','-','*','/']:
             print('Neznámá operace')
-            act = input("Prosím, vyberte si funkciu. Pre sčítanie '+', pre odčítanie '-', pre násobenie '*' a pre delenie '/': ")
+            act = input("Vyberte si funkciu. '+', '-', '*', '/': ")
             continue
-        b = input("Zadajte 2. celé alebo desatinné číslo: ")
+        b = input("Zadajte 2. číslo: ")
         b = float(b)
         # c = None
         if act is '+':
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         GoOn = None
         # EV: Aky zmysel ma plz 'GoOn = None'? GoOn treba premazat alebo to robis ako strategiu, ako spustit dalsi while cyklus?
         while not GoOn:
-            GoOn = input("Pre počítanie napíšte 'a', pre ukončenie napíšte 'n': ")
+            GoOn = input("Chcete pokračovať? a/n : ")
             if GoOn not in ['a', 'n']:
                 print("Zadali ste zlú hodnotu.")
                 GoOn = None
